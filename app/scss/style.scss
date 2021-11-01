@@ -52,6 +52,55 @@
   }
 
 
+  .subscribe {
+
+
+    &__wrapper {
+      padding-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;    
+      border: none;
+      background: $color__block--bg-white;
+      padding: 0;
+    
+      &:active,
+      &:hover,
+      &:focus {
+        background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+      }
+    }
+
+    &__block-header {
+      width: 100%;
+      font-size: 13px;
+      line-height: 15px;
+      @extend %title-font;
+      text-align: center;
+    }
+
+    & .block-header--1 {
+      background: white;
+    }
+
+    & .block-header--2 {
+      background: $secondary;
+      color: $text--bg-white;
+    }
+
+    & .block-header--3 {
+      background: $primary;
+      color: $text--bg-white;
+    }
+  }
+
+
   
   
   @media (max-width: 375px) {
