@@ -1,5 +1,7 @@
+
 html,
 body {
+	font-family: 'SF-Pro-Text-Regular', -apple-system, BlinkMacSystemFont, sans-serif;
 	height: 100%;
 }
 
@@ -7,6 +9,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	max-width: 415px;
+  margin: 0 auto;
 }
 
 .main {
@@ -17,9 +21,7 @@ body {
 }
 
 .container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 

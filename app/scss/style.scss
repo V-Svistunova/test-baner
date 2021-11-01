@@ -5,3 +5,61 @@
 @import 'global';
 
 
+
+  
+  .header {
+    padding: 47px 0 73px;
+    height: 471px;
+    background: url(./../images/header--bg.png) no-repeat center;
+  
+    &__btn {
+      display: block;
+      padding: 0 12px;
+      border: none;
+      background: transparent;    
+      margin-left: auto;
+      margin-right: 0;
+    }
+    
+    &__btn--svg:hover {
+      fill: $primary;
+    }
+  
+    &__title {
+      @extend %title-font;
+      padding: 0 0 34px 4px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: 0.37px;
+      color: white;
+    }
+
+    &__chart {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: -11%;
+        left: 45.5%;
+        width: 132px;
+        height: 250px;
+        background: url(./../images/girl.png) no-repeat center;
+      }
+    }
+  }
+
+
+  
+  
+  @media (max-width: 375px) {
+    
+  }
+
+  @media (max-width: 320px) {
+    
+  }
+
+
