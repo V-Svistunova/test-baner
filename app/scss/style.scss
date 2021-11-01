@@ -189,6 +189,26 @@
     }
   }
 
+  .footer {
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(black, 0.4);
+    text-align: center;
+    padding-bottom: 5px;
+
+    &__botoom {
+      width: 134px;
+      height: 5px;
+      background: black;
+      margin: 26px auto 8px;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+}
+  }
+
 
   
   
