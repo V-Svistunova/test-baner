@@ -52,8 +52,69 @@
   }
 
 
-  .subscribe {
+  .review { 
+    position: relative;
+    padding: 0 20px 0 21px;
 
+    &__wrapper {
+      position: absolute;
+      top: -78px;
+      width: max-content;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px;
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 374px;
+      height: 145px;
+      padding: 20px;
+      padding-bottom: 24px;     
+      background: $color__block--bg-white;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+
+    &__block-box {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__block-title {
+      font-size: 15px;
+      line-height: 18px;
+      font-style: 'SF-Pro-Text-Semibold', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: $text--bg-white;
+    }
+    
+    &__block-author {
+      font-size: 15px;
+      line-height: 18px;
+      font-family: 'SF-Pro-Text-Regular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 400;
+      color: rgba($text--bg-white, 0.5);
+    }
+
+    &__block-text {
+      max-width: 290px;
+      font-size: 14.6px;
+      line-height: 18px;
+      font-family: 'SF-Pro-Text-Regular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 300;
+    }
+  }
+
+
+  
+
+
+  .subscribe {
 
     &__wrapper {
       padding-top: 96px;
@@ -206,7 +267,7 @@
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
       -o-border-radius: 100px;
-}
+    }
   }
 
 
