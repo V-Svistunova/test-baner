@@ -8,9 +8,36 @@
 
   
   .header {
+    position: relative;
     padding: 47px 0 73px;
     height: 471px;
-    background: url(./../images/header--bg.png) no-repeat center;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+
+    @media (max-width: 376px) {
+      height: 421px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      max-width: 414px;
+      height: 100vh;
+      max-height: 198px;
+      top: 33%;
+      left: 0;
+      background: url(./../images/header--bg.png) no-repeat center;
+      z-index: -1;
+      background-size: contain;
+
+      @media (max-width: 376px) {
+        top: 30%;
+        max-height: 210px;
+      }
+    }
+
   
     &__btn {
       display: block;
@@ -19,6 +46,10 @@
       background: transparent;    
       margin-left: auto;
       margin-right: 0;
+
+      @media (max-width: 376px) {
+        padding: 0 13px;
+      }
     }
     
     &__btn--svg:hover {
@@ -34,21 +65,102 @@
       line-height: 37px;
       letter-spacing: 0.37px;
       color: white;
-    }
 
-    &__chart {
-      position: relative;
+      @media (max-width: 376px) {
+        padding-bottom: 24px;
+        padding-left: 0;
+        padding-right: 2px;
+      }
 
       &::after {
         position: absolute;
         content: "";
-        top: -11%;
+        top: 28%;
         left: 45.5%;
         width: 132px;
         height: 250px;
         background: url(./../images/girl.png) no-repeat center;
+        z-index: 15;
+
+        @media (max-width: 376px) {
+          background-size: 97%;
+          top: 25.5%;
+          left: 43%;
+        }
       }
     }
+
+    &__chart-items {
+      height: 154px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      right: 14px;
+      bottom: 15px;
+      z-index: 15;
+
+      @media (max-width: 376px) {
+        height: 143px;
+        right: 8%;
+        bottom: 7%;
+      }
+    }
+
+    &__chart {
+      width: 100%;
+      height: 100vmax;
+      max-height: 200px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0 20px 34px;
+
+      @media (max-width: 376px) {
+        height: 176px;
+        padding: 14px 0 14px 21px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 414px;
+        height: 187px;
+        left: 0;
+        top: -5px;
+        background: url(./../images/line-pro.svg) no-repeat center;
+        background-size: 100%;
+
+        @media (max-width: 376px) {
+          width: 375px;
+          top: -12px;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 414px;
+        height: 74px;
+        left: 0;
+        top: 0px;
+        background: url(./../images/line-free.svg) no-repeat center;
+        background-size: 100%;
+
+        @media (max-width: 376px) {
+          width: 375px;
+          top: -4px;
+        }
+      }      
+    }    
+
+    &__chart-subtitle {
+      font-size: 12px;
+      line-height: 14px;
+      color: $text--bg-dark;
+      font-weight: 300;
+    }    
   }
 
 
@@ -63,13 +175,19 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 5px;
+
+      
+      @media (max-width: 376px) {
+        top: -76px;
+      }
     }
 
     &__block {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 374px;
+      width: 100vmax;
+      max-width: 374px;
       height: 145px;
       padding: 20px;
       padding-bottom: 24px;     
@@ -79,6 +197,13 @@
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
+
+      
+      @media (max-width: 376px) {
+        max-width: 334px;
+        padding: 21px;
+        padding-bottom: 25px;
+      }
     }
 
     &__block-box {
@@ -111,7 +236,6 @@
   }
 
 
-  
 
 
   .subscribe {
@@ -122,6 +246,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
+
+      @media (max-width: 376px) {
+        padding-top: 92px;
+        padding-bottom: 18px;
+      }
     }
 
     &__block {
@@ -138,6 +267,10 @@
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
 
+      @media (max-width: 376px) {
+        height: 156px;
+      }
+
       &:active,
       &:hover,
       &:focus {
@@ -150,6 +283,10 @@
     .block--1 {
       align-self: flex-end;
       height: 152px;
+
+      @media (max-width: 376px) {
+        height: 131px;
+      }
     }
 
     &__block-header {
@@ -165,6 +302,12 @@
       -moz-border-radius: 5px 5px 0 0;
       -ms-border-radius: 5px 5px 0 0;
       -o-border-radius: 5px 5px 0 0;
+
+      @media (max-width: 376px) {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.78px;
+      }
     }
 
     .block-header--1 {
@@ -185,6 +328,10 @@
       height: 100%;
       margin: 0 auto;
       padding: 6px 10px 0;
+
+      @media (max-width: 376px) {
+        padding: 0;
+      }
     }
 
     
@@ -195,11 +342,20 @@
       line-height: 18px;
       text-align: center;
       padding: 0 20px 13px;
+
+      @media (max-width: 376px) {
+        padding-bottom: 7px;
+        padding-top: 2px;
+      }
     }
 
     &__block-title--big {
       font-size: 27px;
       line-height: 28px;
+
+      @media (max-width: 376px) {
+        font-size: 24px;
+      }
     }
 
     &__block-text {
@@ -207,7 +363,11 @@
       padding: 0 20px 6px 20px;
       font-size: 13px;
       line-height: 16px;
-      text-align: center;
+      text-align: center; 
+      
+      @media (max-width: 376px) {
+        padding: 0 22px 6px 22px;
+      }
     }
 
     &__block-text--stretch {
@@ -238,7 +398,7 @@
       font-size: 22px;
       line-height: 28px;
       color: $text--bg-dark;
-      padding: 11px;
+      padding: 11px 0;
       margin-bottom: 20px;
       background: linear-gradient(225deg, #542285 0%, #222266 100%);
       border: none;
@@ -247,8 +407,15 @@
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
+
+      @media (max-width: 376px) {
+        
+      }
     }
   }
+
+
+
 
   .footer {
     font-size: 11px;
@@ -273,12 +440,4 @@
 
   
   
-  @media (max-width: 375px) {
-    
-  }
-
-  @media (max-width: 320px) {
-    
-  }
-
-
+ 
