@@ -71,7 +71,7 @@
     }
     
     &__btn--svg:hover {
-      fill: $primary;
+      fill: $text--bg-white;
     }
   
     &__title {
@@ -254,51 +254,17 @@
 
     //start slider
 
-    /* Слайдер */
-    .slick-slider{}
-    /* Слайдер запущен */
-    .slick-slider.slick-initialized{}
-    /* Слайдер с точками */
-    .slick-slider.slick-dotted{}
-    /* Ограничивающая оболочка */
     .slick-list {
       overflow: hidden;
     }
-    /* Лента слайдов */
+    
     .slick-track{
       display: flex;
     }
-    /* Слайд */
-    .slick-slide{}
-    /* Слайд активный (показывается) */
-    .slick-slide.slick-active{}
-    /* Слайд основной */
-    .slick-slide.slick-current{}
-    /* Слайд по центру */
-    .slick-slide.slick-center{}
-    /* Клонированный слайд */
-    .slick-slide.slick-cloned{}
-    /* Стрелка */
-    .slick-arrow{}
-    /* Стрелка влево */
-    .slick-arrow.slick-prev{}
-    /* Стрелка вправо */
-    .slick-arrow.slick-next{}
-    /* Стрелка не активная */
-    .slick-arrow.slick-disabled{}
-    /* Точки (булиты) */
-    .slick-dots{}
-    .slick-dots li{}
-    /* Активная точка */
-    .slick-dots li.slick-active{}
-    /* Элемент точки */
-    .slick-dots li button{}
-
+   
     .slider__item {
-      display: block;
       min-width: 374px;
       text-align: center;
-      margin: 0 auto;
       padding: 0 3px;
 
       @media (max-width: 413px) {
@@ -309,17 +275,11 @@
         min-width: 280px;
       }
     }
-
-    &__slider {      
-      
-    }
-
-
     //end slider
 
 
     &__block {
-      
+      color: $text--bg-white;
       display: flex !important;
       flex-direction: column;
       justify-content: space-between;
@@ -349,6 +309,7 @@
       }
     }
 
+
     &__block-box {
       display: flex;
       justify-content: space-between;
@@ -377,7 +338,7 @@
       font-size: 15.5px;
       line-height: 18px;
       font-style: 'SF-Pro-Text-Semibold', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: $text--bg-white;
+      font-weight: 100;
 
       @media (max-width: 413px) {
         font-size: 15px;
@@ -393,7 +354,7 @@
       line-height: 18px;
       font-family: 'SF-Pro-Text-Regular', -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 400;
-      color: rgba($text--bg-white, 0.5);
+      opacity: 0.5;
 
       @media (max-width: 374px) {
         font-weight: 200;
@@ -668,7 +629,19 @@
     }
   }
 
+// Start dark theme
 
+.review__block--bg-dark {
+  background: $color__slide--bg-dark;
+  color: $text--bg-dark;
+}
   
+.bg--black {
+  background: $color--bg-dark;
+  color: rgba($text--bg-dark, 0.4);
+}
   
- 
+.subscribe__block--bg-dark {
+  background: $color__block--bg-dark;
+  color: $text--bg-dark;
+}
