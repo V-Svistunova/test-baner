@@ -252,10 +252,74 @@
       }
     }
 
-    
+    //start slider
+
+    /* Слайдер */
+    .slick-slider{}
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted{}
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track{
+      display: flex;
+    }
+    /* Слайд */
+    .slick-slide{}
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active{}
+    /* Слайд основной */
+    .slick-slide.slick-current{}
+    /* Слайд по центру */
+    .slick-slide.slick-center{}
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned{}
+    /* Стрелка */
+    .slick-arrow{}
+    /* Стрелка влево */
+    .slick-arrow.slick-prev{}
+    /* Стрелка вправо */
+    .slick-arrow.slick-next{}
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled{}
+    /* Точки (булиты) */
+    .slick-dots{}
+    .slick-dots li{}
+    /* Активная точка */
+    .slick-dots li.slick-active{}
+    /* Элемент точки */
+    .slick-dots li button{}
+
+    .slider__item {
+      display: block;
+      min-width: 374px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 3px;
+
+      @media (max-width: 413px) {
+        min-width: 335px;
+      }
+
+      @media (max-width: 374px) {
+        min-width: 280px;
+      }
+    }
+
+    &__slider {      
+      
+    }
+
+
+    //end slider
+
 
     &__block {
-      margin: 0 auto;
+      
       display: flex !important;
       flex-direction: column;
       justify-content: space-between;
@@ -263,7 +327,7 @@
       max-width: 374px;
       height: 145px;
       padding: 20px;
-      padding-bottom: 24px;     
+      padding-bottom: 24px; 
       background: $color__block--bg-white;
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -338,6 +402,7 @@
 
     &__block-text {
       max-width: 290px;
+      text-align: left;
       font-size: 14.6px;
       line-height: 18px;
       font-family: 'SF-Pro-Text-Regular', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -596,6 +661,10 @@
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
       -o-border-radius: 100px;
+
+      @media (max-width: 374px) {
+        display: none;
+      }
     }
   }
 
