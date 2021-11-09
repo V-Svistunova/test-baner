@@ -228,25 +228,20 @@
 
 
   .review {
+    width: 100%;
+    position: relative;
+    padding: 0 20px 0 21px;
+
+    @media (max-width: 374px) {
+      padding-left: 20px;
+    }
     
 
     &__inner {           
-      position: relative;
-      padding: 0 20px 0 21px;
-
-      @media (max-width: 374px) {
-        padding-left: 20px;
-      }
-    }
-
-    &__slider {
       position: absolute;
+      left: 0;
+      right: 0;
       top: -78px;
-      width: max-content;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 5px;
-
       
       @media (max-width: 413px) {
         top: -76px;
@@ -257,11 +252,14 @@
       }
     }
 
+    
+
     &__block {
-      display: flex;
+      margin: 0 auto;
+      display: flex !important;
       flex-direction: column;
       justify-content: space-between;
-      width: 100vmax;
+      width: 100%;
       max-width: 374px;
       height: 145px;
       padding: 20px;
