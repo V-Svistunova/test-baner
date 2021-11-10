@@ -15,7 +15,8 @@
     <main class="main">
 
       <header class="header">
-        <div class="header__modal">
+        <div class="header__modal">          
+          <div class="header__chart-background blink-1"></div>
           <button class="header__btn">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle class="header__btn--svg" cx="16" cy="16" r="16" fill="white" fill-opacity="0.527344"/>
@@ -30,12 +31,14 @@
           </button>
           <h2 class="header__title">Try Verv for free</h2>
           <div class="header__chart">
+            <div class="header__chart--line-free scale-up-hor-left"></div>
+            <div class="header__chart--line-pro scale-up-hor-left"></div>
             <h5 class="header__chart-subtitle">Extr. Obese</h5>
             <h5 class="header__chart-subtitle">Obese</h5>
             <h5 class="header__chart-subtitle">Overweight</h5>
             <h5 class="header__chart-subtitle">Healthy</h5>
             <div class="header__chart-items">
-              <div class="header__chart-item">
+              <div class="header__chart-item scale-in-center">
                 <svg width="51" height="54" viewBox="0 0 51 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_779:31)">
                   <rect x="18" y="32" width="14" height="14" rx="7" fill="#EE304E"/>
@@ -73,43 +76,45 @@
                   </defs>
                   </svg>  
               </div>
-              <div class="header__chart-item">
-                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_d_779:32)">
-                  <rect x="18" y="32" width="14" height="14" rx="7" fill="#04CD00"/>
-                  <rect x="19.5" y="33.5" width="11" height="11" rx="5.5" stroke="white" stroke-width="3"/>
-                  </g>
-                  <g clip-path="url(#clip0_779:32)">
-                  <g filter="url(#filter1_d_779:32)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47715 4.47715 0 10 0H41C46.5228 0 51 4.47715 51 10V14C51 19.5228 46.5228 24 41 24H30L25 27L20 24H10C4.47715 24 0 19.5228 0 14V10Z" fill="white"/>
-                  </g>
-                  <path d="M10.6328 8.54492V17H12.4023V14.334H13.9844C15.7656 14.334 17.002 13.1738 17.002 11.4395C17.002 9.69922 15.8066 8.54492 14.0723 8.54492H10.6328ZM12.4023 9.94531H13.6035C14.6172 9.94531 15.2031 10.4844 15.2031 11.4453C15.2031 12.4121 14.6113 12.9512 13.5977 12.9512H12.4023V9.94531ZM19.8203 9.92773H21.3262C22.2051 9.92773 22.7559 10.4551 22.7559 11.2754C22.7559 12.1133 22.2344 12.623 21.3438 12.623H19.8203V9.92773ZM19.8203 13.9062H21.2383L22.8145 17H24.8184L23.0371 13.6426C24.0098 13.2617 24.5723 12.3242 24.5723 11.2402C24.5723 9.57031 23.459 8.54492 21.5137 8.54492H18.0508V17H19.8203V13.9062ZM29.5527 8.39844C27.0449 8.39844 25.4746 10.0801 25.4746 12.7754C25.4746 15.4648 27.0449 17.1465 29.5527 17.1465C32.0547 17.1465 33.6309 15.4648 33.6309 12.7754C33.6309 10.0801 32.0547 8.39844 29.5527 8.39844ZM29.5527 9.875C30.9355 9.875 31.8203 11 31.8203 12.7754C31.8203 14.5449 30.9355 15.6641 29.5527 15.6641C28.1641 15.6641 27.2793 14.5449 27.2793 12.7754C27.2793 11 28.1699 9.875 29.5527 9.875Z" fill="black"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M40.8831 18.4697C40.4926 18.8602 39.8594 18.8602 39.4689 18.4697L36.2929 15.2937C35.6695 14.6703 36.0993 13.6037 36.9808 13.5868L38.1975 13.5634V8C38.1975 7.44772 38.6452 7 39.1975 7H41.3153C41.8676 7 42.3153 7.44772 42.3153 8V13.4842L43.4572 13.4623C44.3572 13.445 44.8201 14.5327 44.1835 15.1692L40.8831 18.4697Z" fill="#04CD00"/>
-                  </g>
-                  <defs>
-                  <filter id="filter0_d_779:32" x="12" y="28" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="2"/>
-                  <feGaussianBlur stdDeviation="3"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.139942 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_779:32"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_779:32" result="shape"/>
-                  </filter>
-                  <filter id="filter1_d_779:32" x="-4" y="-2" width="59" height="35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="2"/>
-                  <feGaussianBlur stdDeviation="2"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.352925 0 0 0 0 0 0 0 0 0 0.487432 0 0 0 0.258332 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_779:32"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_779:32" result="shape"/>
-                  </filter>
-                  <clipPath id="clip0_779:32">
-                  <rect width="51" height="27" fill="white"/>
-                  </clipPath>
-                  </defs>
-                  </svg>
+              <div class="heartbeat">                
+                <div class="header__chart-item scale-in-center">
+                  <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_779:32)">
+                    <rect x="18" y="32" width="14" height="14" rx="7" fill="#04CD00"/>
+                    <rect x="19.5" y="33.5" width="11" height="11" rx="5.5" stroke="white" stroke-width="3"/>
+                    </g>
+                    <g clip-path="url(#clip0_779:32)">
+                    <g filter="url(#filter1_d_779:32)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47715 4.47715 0 10 0H41C46.5228 0 51 4.47715 51 10V14C51 19.5228 46.5228 24 41 24H30L25 27L20 24H10C4.47715 24 0 19.5228 0 14V10Z" fill="white"/>
+                    </g>
+                    <path d="M10.6328 8.54492V17H12.4023V14.334H13.9844C15.7656 14.334 17.002 13.1738 17.002 11.4395C17.002 9.69922 15.8066 8.54492 14.0723 8.54492H10.6328ZM12.4023 9.94531H13.6035C14.6172 9.94531 15.2031 10.4844 15.2031 11.4453C15.2031 12.4121 14.6113 12.9512 13.5977 12.9512H12.4023V9.94531ZM19.8203 9.92773H21.3262C22.2051 9.92773 22.7559 10.4551 22.7559 11.2754C22.7559 12.1133 22.2344 12.623 21.3438 12.623H19.8203V9.92773ZM19.8203 13.9062H21.2383L22.8145 17H24.8184L23.0371 13.6426C24.0098 13.2617 24.5723 12.3242 24.5723 11.2402C24.5723 9.57031 23.459 8.54492 21.5137 8.54492H18.0508V17H19.8203V13.9062ZM29.5527 8.39844C27.0449 8.39844 25.4746 10.0801 25.4746 12.7754C25.4746 15.4648 27.0449 17.1465 29.5527 17.1465C32.0547 17.1465 33.6309 15.4648 33.6309 12.7754C33.6309 10.0801 32.0547 8.39844 29.5527 8.39844ZM29.5527 9.875C30.9355 9.875 31.8203 11 31.8203 12.7754C31.8203 14.5449 30.9355 15.6641 29.5527 15.6641C28.1641 15.6641 27.2793 14.5449 27.2793 12.7754C27.2793 11 28.1699 9.875 29.5527 9.875Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M40.8831 18.4697C40.4926 18.8602 39.8594 18.8602 39.4689 18.4697L36.2929 15.2937C35.6695 14.6703 36.0993 13.6037 36.9808 13.5868L38.1975 13.5634V8C38.1975 7.44772 38.6452 7 39.1975 7H41.3153C41.8676 7 42.3153 7.44772 42.3153 8V13.4842L43.4572 13.4623C44.3572 13.445 44.8201 14.5327 44.1835 15.1692L40.8831 18.4697Z" fill="#04CD00"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_779:32" x="12" y="28" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="3"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.139942 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_779:32"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_779:32" result="shape"/>
+                    </filter>
+                    <filter id="filter1_d_779:32" x="-4" y="-2" width="59" height="35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.352925 0 0 0 0 0 0 0 0 0 0.487432 0 0 0 0.258332 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_779:32"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_779:32" result="shape"/>
+                    </filter>
+                    <clipPath id="clip0_779:32">
+                    <rect width="51" height="27" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -123,7 +128,7 @@
             <div class="slider__item">
               <div class="review__block review__block-1">
                 <div class="review__block-box">
-                  <h6 class="review__block-title">I'm happy with that</h6>
+                  <h6 class="review__block-title">I'm happy</h6>
                   <h5 class="review__block-author">lila_lane</h5>
                 </div>              
                 <p class="review__block-text">
@@ -164,39 +169,41 @@
 
       <section class="subscribe">
         <div class="container">
-          <div class="subscribe__wrapper">
+          
 
-            <button class="subscribe__block subscribe__block-1 block--1">
-                <div class="subscribe__block-main block-main--1">
-                <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 1 </span> month </h4>
-                <span class="subscribe__block-text">$14.99 / month</span>
-                <span class="subscribe__block-text--stretch">month: $14.99</span>
-              </div>
-              <div class="subscribe__block-footer"></div>
-            </button>
+            <div class="subscribe__wrapper">
+              <button class="subscribe__block subscribe__block-1 block--1" value="1">
+                  <div class="subscribe__block-main block-main--1">
+                  <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 1 </span> month </h4>
+                  <span class="subscribe__block-text">$14.99 / month</span>
+                  <span class="subscribe__block-text--stretch">month: $14.99</span>
+                </div>
+                <div class="subscribe__block-footer"></div>
+              </button>
 
-            <button class="subscribe__block subscribe__block-2">
-              <div class="subscribe__block-header block-header--2"> <span>SAVE 80%</span> </div>
-              <div class="subscribe__block-main">
-                <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 12 </span>months</h4>
-                <span class="subscribe__block-text">$39.99 per year</span>
-                <span class="subscribe__block-text--stretch">month: $3.33</span>
-              </div>
-              <div class="subscribe__block-footer"></div>
-            </button>
+              <button class="subscribe__block subscribe__block-2" value="2" autofocus>
+                <div class="subscribe__block-header block-header--2"> <span>SAVE 80%</span> </div>
+                <div class="subscribe__block-main">
+                  <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 12 </span>months</h4>
+                  <span class="subscribe__block-text">$39.99 per year</span>
+                  <span class="subscribe__block-text--stretch">month: $3.33</span>
+                </div>
+                <div class="subscribe__block-footer"></div>
+              </button>
 
-            <button class="subscribe__block subscribe__block-3">
-              <div class="subscribe__block-header block-header--3"> <span>SAVE 90%</span> </div>
-              <div class="subscribe__block-main">
-                <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 3 </span>months</h4>
-                <span class="subscribe__block-text">$29.99 / 3 month</span>
-                <span class="subscribe__block-text--stretch">month: $9.99</span>
-              </div>
-              <div class="subscribe__block-footer block-footer--3"> <span>sale</span></div>
-            </button>
-
-          </div>
-          <button class="subscribe__btn">Сontinue</button>
+              <button class="subscribe__block subscribe__block-3" value="3">
+                <div class="subscribe__block-header block-header--3"> <span>SAVE 90%</span> </div>
+                <div class="subscribe__block-main">
+                  <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 3 </span>months</h4>
+                  <span class="subscribe__block-text">$29.99 / 3 month</span>
+                  <span class="subscribe__block-text--stretch">month: $9.99</span>
+                </div>
+                <div class="subscribe__block-footer block-footer--3"> <span>sale</span></div>
+              </button>              
+            </div>          
+            <button type="submit" class="subscribe__btn">Сontinue</button>
+            
+          
         </div>
       </section>
     </main>

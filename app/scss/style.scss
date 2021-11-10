@@ -4,8 +4,6 @@
 @import 'libs';
 @import 'global';
 
-
-
   
   .header {
     position: relative;
@@ -23,8 +21,9 @@
       height: 262px;
       padding-top: 20px;
     }
-
-    &::after {
+  
+    &__chart-background {
+      
       position: absolute;
       content: "";
       width: 100%;
@@ -50,7 +49,7 @@
       }
     }
 
-  
+
     &__btn {
       display: block;
       padding: 0 12px;
@@ -81,8 +80,6 @@
       font-size: 31px;
       line-height: 37px;
       word-spacing: -1px;
-
-
       color: white;
       
       @media (max-width: 413px) {
@@ -141,10 +138,33 @@
       @media (max-width: 374px) { 
         height: 102px;
         padding: 6px 21px;
+      }    
+    } 
+
+    &__chart--line-free {
+      position: absolute;
+      content: "";
+      width: 414px;
+      height: 74px;
+      left: 0;
+      top: 0px;
+      background: url(./../images/line-free.svg) no-repeat center;
+      background-size: 100%;
+
+      @media (max-width: 413px) {
+        width: 375px;
+        top: -2%;
       }
 
-      &::before {
-        position: absolute;
+      @media (max-width: 374px) {
+        background: url(./../images/line-free--small.svg) no-repeat center;
+        top: -15%;
+        left: -9%;
+      }
+    }
+
+    &__chart--line-pro {
+      position: absolute;
         content: "";
         width: 100%;
         max-width: 414px;
@@ -163,29 +183,6 @@
           background: url(./../images/line-pro--small.svg) no-repeat center;
           top: -41%;
         }
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        width: 414px;
-        height: 74px;
-        left: 0;
-        top: 0px;
-        background: url(./../images/line-free.svg) no-repeat center;
-        background-size: 100%;
-
-        @media (max-width: 413px) {
-          width: 375px;
-          top: -2%;
-        }
-
-        @media (max-width: 374px) {
-          background: url(./../images/line-free--small.svg) no-repeat center;
-          top: -15%;
-          left: -9%;
-        }
-      }      
     }
     
     &__chart-items {
@@ -377,9 +374,6 @@
     }
   }
 
-
-
-
   .subscribe {
 
     &__wrapper {
@@ -409,6 +403,7 @@
       background: $color__block--bg-white;
       padding: 0;
       height: 176px;
+      border: transparent !important;
       border-radius: 8px;
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
@@ -423,9 +418,9 @@
         height: 133px;
       }
 
+      &:focus,
       &:active,
-      &:hover,
-      &:focus {
+      &--active {
         background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
         color: $text--bg-dark;
         border: none;
@@ -629,6 +624,10 @@
     }
   }
 
+
+
+
+
 // Start dark theme
 
 .review__block--bg-dark {
@@ -645,3 +644,24 @@
   background: $color__block--bg-dark;
   color: $text--bg-dark;
 }
+
+
+
+// start animation
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+	        animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+}
+
+.heartbeat {
+	-webkit-animation: heartbeat 2s ease-in-out 2.5s infinite both;
+	        animation: heartbeat 2s ease-in-out 2.5s infinite both;
+}
+
+.scale-up-hor-left {
+	-webkit-animation: scale-up-hor-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+

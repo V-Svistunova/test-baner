@@ -12,16 +12,16 @@ $(function () {
   });
 })
 
-
+let subscribeBlock1 = document.querySelector('.subscribe__block-1');
+let subscribeBlock2 = document.querySelector('.subscribe__block-2');
+let subscribeBlock3 = document.querySelector('.subscribe__block-3');
 
 
 function toggleTheme() {
   let closeBtn = document.querySelector('.header__btn');
   let footer = document.querySelector('.footer');
   let subscribe = document.querySelector('.main');
-  let subscribeBlock1 = document.querySelector('.subscribe__block-1');
-  let subscribeBlock2 = document.querySelector('.subscribe__block-2');
-  let subscribeBlock3 = document.querySelector('.subscribe__block-3');
+  
   
   let slideReview1 = document.querySelector('.review__block-1');
   let slideReview2 = document.querySelector('.review__block-2');
@@ -41,3 +41,11 @@ function toggleTheme() {
 }
 
 toggleTheme();
+
+
+
+
+
+
+
+
