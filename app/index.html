@@ -16,7 +16,7 @@
 
       <header class="header">
         <div class="header__modal">          
-          <div class="header__chart-background blink-1"></div>
+          <div class="header__chart-background blink-2"></div>
           <button class="header__btn">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle class="header__btn--svg" cx="16" cy="16" r="16" fill="white" fill-opacity="0.527344"/>
@@ -168,53 +168,64 @@
       </section>
 
       <section class="subscribe">
-        <div class="container">
-          
-
-            <div class="subscribe__wrapper">
-              <button class="subscribe__block subscribe__block-1 block--1" value="1">
-                  <div class="subscribe__block-main block-main--1">
-                  <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 1 </span> month </h4>
-                  <span class="subscribe__block-text">$14.99 / month</span>
-                  <span class="subscribe__block-text--stretch">month: $14.99</span>
-                </div>
-                <div class="subscribe__block-footer"></div>
-              </button>
-
-              <button class="subscribe__block subscribe__block-2" value="2" autofocus>
-                <div class="subscribe__block-header block-header--2"> <span>SAVE 80%</span> </div>
-                <div class="subscribe__block-main">
-                  <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 12 </span>months</h4>
-                  <span class="subscribe__block-text">$39.99 per year</span>
-                  <span class="subscribe__block-text--stretch">month: $3.33</span>
-                </div>
-                <div class="subscribe__block-footer"></div>
-              </button>
-
-              <button class="subscribe__block subscribe__block-3" value="3">
-                <div class="subscribe__block-header block-header--3"> <span>SAVE 90%</span> </div>
-                <div class="subscribe__block-main">
-                  <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 3 </span>months</h4>
-                  <span class="subscribe__block-text">$29.99 / 3 month</span>
-                  <span class="subscribe__block-text--stretch">month: $9.99</span>
-                </div>
-                <div class="subscribe__block-footer block-footer--3"> <span>sale</span></div>
-              </button>              
-            </div>          
-            <button type="submit" class="subscribe__btn">Сontinue</button>
+        <div class="container">              
             
-          
+            <fieldset class="subscribe__fieldset">
+              <div class="subscribe__wrapper" id="radios">
+
+                <div class="subscribe__radio">
+                  <input class="subscribe__radio-input" type="radio" id="contactChoice1" name="contact" value="https://www.google.com/search?q=1" />
+                  <label class="subscribe__block subscribe__block-1" for="contactChoice1" value="1">
+                      <div class="subscribe__block-main block-main--1">
+                      <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 1 </span> month </h4>
+                      <span class="subscribe__block-text">$14.99 / month</span>
+                      <span class="subscribe__block-text--stretch">month: $14.99</span>
+                    </div>
+                    <div class="subscribe__block-footer"></div>
+                  </label>
+                </div>
+                
+                <div class="subscribe__radio">
+                  <input class="subscribe__radio-input" checked type="radio" id="contactChoice2" name="contact" value="https://www.google.com/search?q=2" />
+                  <label class="subscribe__block subscribe__block-2 subscribe__block--active" for="contactChoice2" value="2" autofocus>
+                    <div class="subscribe__block-header block-header--2 "> <span>SAVE 80%</span> </div>
+                    <div class="subscribe__block-main">
+                      <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 12 </span>months</h4>
+                      <span class="subscribe__block-text">$39.99 per year</span>
+                      <span class="subscribe__block-text--stretch">month: $3.33</span>
+                    </div>
+                    <div class="subscribe__block-footer"></div>
+                  </label>
+                </div>
+                
+                <div class="subscribe__radio">
+                  <input class="subscribe__radio-input" type="radio" id="contactChoice3" name="contact" value="https://www.google.com/search?q=3" />
+                  <label class="subscribe__block subscribe__block-3 " for="contactChoice3" value="3">
+                    <div class="subscribe__block-header block-header--3"> <span>SAVE 90%</span> </div>
+                    <div class="subscribe__block-main">
+                      <h4 class="subscribe__block-title"><span class="subscribe__block-title--big"> 3 </span>months</h4>
+                      <span class="subscribe__block-text">$29.99 / 3 month</span>
+                      <span class="subscribe__block-text--stretch">month: $9.99</span>
+                    </div>
+                    <div class="subscribe__block-footer block-footer--3"> <span>sale</span></div>
+                  </label>  
+                </div>
+                
+
+              </div>
+              <input class="subscribe__btn" type="button" value="Сontinue" onclick="go()" />
+            </fieldset>                    
+
         </div>
       </section>
-    </main>
-
+    </main> 
+  
     <footer class="footer">
       <p class="footer__text">Recurring billing. Cancel anytime.</p>
       <div class="footer__botoom"></div>
     </footer>
   
   </div>
-
 
 
   <script src="js/main.min.js"></script>
